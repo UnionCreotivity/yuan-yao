@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Cormorant+Upright:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@500;600;700&family=Noto+Serif+TC:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@keyframes cloudAnimate {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  25%,
+  75% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes cloudAnimate3 {
+  0% {
+    opacity: 0;
+    transform: translateX(-80%) scale(1);
+  }
+
+  25%,
+  75% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateX(50%) scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes cloudAnimate4 {
+  0% {
+    opacity: 0;
+    transform: translateX(-80%) scale(2);
+  }
+
+  25%,
+  75% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateX(80%) scale(2);
+    opacity: 0;
+  }
+}
