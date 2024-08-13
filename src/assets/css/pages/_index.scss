@@ -27,6 +27,11 @@
       width: 8.5vw;
       margin-top: 8vw;
       z-index: 10;
+
+      @media all and (max-width: 1440px) {
+        width: 10vw;
+        margin-top: 10vw;
+      }
       img {
         width: 100%;
       }
@@ -34,7 +39,7 @@
 
     .title-box {
       font-family: "noto Serif TC";
-      font-size: 18pt;
+      font-size: 0.9vw;
       color: #555757;
       font-weight: 600;
       text-align: center;
@@ -42,6 +47,10 @@
       line-height: 2;
       z-index: 10;
       margin-top: 2vw;
+
+      @media all and (max-width: 1440px) {
+        font-size: 1.1vw;
+      }
     }
 
     .arrow-box {

@@ -77,12 +77,18 @@
   margin-top: 8vw;
   z-index: 10;
 }
+@media all and (max-width: 1440px) {
+  .index-body .card1 .logo-box {
+    width: 10vw;
+    margin-top: 10vw;
+  }
+}
 .index-body .card1 .logo-box img {
   width: 100%;
 }
 .index-body .card1 .title-box {
   font-family: "noto Serif TC";
-  font-size: 18pt;
+  font-size: 0.9vw;
   color: #555757;
   font-weight: 600;
   text-align: center;
@@ -90,6 +96,11 @@
   line-height: 2;
   z-index: 10;
   margin-top: 2vw;
+}
+@media all and (max-width: 1440px) {
+  .index-body .card1 .title-box {
+    font-size: 1.1vw;
+  }
 }
 .index-body .card1 .arrow-box {
   width: 2.5vw;
