@@ -1,0 +1,24 @@
+@mixin zhTitle() {
+  color: #534741;
+  font-weight: 600;
+  font-family: "微軟正黑體";
+  letter-spacing: 0.4em;
+  font-size: 0.95vw;
+}
+
+@mixin enTitle() {
+  color: #9e7c4a;
+  font-weight: 600;
+  font-family: "Cormorant Garamond";
+  font-size: 2.2vw;
+  margin-right: 0.5vw;
+}
+
+@mixin content() {
+  color: #534741;
+  font-weight: 500;
+  font-family: "微軟正黑體";
+  letter-spacing: 0.15em;
+  font-size: 0.95vw;
+  line-height: 2;
+}

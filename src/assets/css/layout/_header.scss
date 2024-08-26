@@ -1,0 +1,37 @@
+header {
+  width: 100%;
+  z-index: 30;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7vw;
+  padding-right: 5vw;
+  padding-bottom: 1vw;
+  padding-top: 0.7vw;
+  .logo-box {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .right-nav-box {
+    display: flex;
+    margin-bottom: -0.4vw;
+    a {
+      color: #555757;
+      font-weight: 600;
+      align-self: center;
+      font-size: 1vw;
+      font-family: "Noto Serif TC";
+      letter-spacing: 0.35em;
+      margin-right: 3vw;
+    }
+  }
+}
