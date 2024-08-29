@@ -1,0 +1,1026 @@
+.about-body {
+  position: relative;
+  .about-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/index/allbg.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .top-img-box {
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      height: 40vw;
+
+      img.top-img {
+        display: block;
+        width: 100%;
+        height: 100vw;
+        transform: translateY(-38vw);
+        object-fit: cover;
+      }
+      img.top-title {
+        position: absolute;
+        width: 14vw;
+        left: 5vw;
+        bottom: 2.5vw;
+      }
+    }
+
+    .page-container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+
+      .tree-shadow1 {
+        position: absolute;
+        left: 0px;
+        top: -2vw;
+        width: 29vw;
+        mix-blend-mode: difference;
+        opacity: 0.28;
+        transform-origin: left top;
+        animation: treeAni-3 3s infinite alternate-reverse ease-in;
+      }
+
+      .left-nav-box {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5.5vw;
+        z-index: 10;
+        left: 8vw;
+        font-size: $font-20;
+        .nav-item {
+          letter-spacing: 0.4em;
+          color: #232323;
+          text-align: center;
+          font-weight: 500;
+          font-family: "Noto Serif TC";
+          cursor: pointer;
+          border-bottom: 1px solid #534741;
+          padding-top: 0.75vw;
+          padding-bottom: 0.75vw;
+
+          &:hover {
+            color: #9e7c4a;
+            transition: 0.3s ease-in-out;
+          }
+        }
+
+        .tab-active {
+          color: #9e7c4a;
+        }
+      }
+
+      .about-vision {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 6vw;
+        padding-bottom: 15vw;
+        .top-nav {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-left: 1.5vw;
+
+          .nav {
+            margin-right: 3vw;
+            font-family: "noto Serif TC";
+            text-align: center;
+            letter-spacing: 0.2em;
+            font-size: $font-20;
+            color: #534741;
+            font-weight: 600;
+            padding-bottom: 0.7vw;
+            position: relative;
+            cursor: pointer;
+
+            &:hover {
+              color: #9e7c4a;
+              transition: 0.3s ease-in-out;
+            }
+
+            &:first-child {
+              &::after {
+                content: "";
+                width: 1px;
+                height: 50%;
+                background-color: #534741;
+                bottom: 0.75vw;
+                position: absolute;
+                left: -1.45vw;
+              }
+            }
+
+            &:last-child {
+              &::after {
+                content: "";
+                width: 1px;
+                height: 50%;
+                background-color: #534741;
+                bottom: 0.75vw;
+                position: absolute;
+                left: -1.5vw;
+              }
+              &::before {
+                content: "";
+                width: 1px;
+                height: 50%;
+                background-color: #534741;
+                bottom: 0.75vw;
+                position: absolute;
+                right: -1.45vw;
+              }
+            }
+          }
+          .active {
+            color: #9e7c4a;
+            position: relative;
+            border-bottom: 1px solid #534741;
+          }
+        }
+
+        .sub-title {
+          display: flex;
+          margin: 0 auto;
+          justify-content: center;
+          font-family: "noto Serif TC";
+          text-align: center;
+          letter-spacing: 0.15em;
+          font-size: $font-24;
+          color: #534741;
+          font-weight: 600;
+          margin-top: 4vw;
+          margin-bottom: 3vw;
+        }
+
+        .small-title {
+          display: flex;
+          margin: 0 auto;
+          justify-content: center;
+          font-family: "noto Serif TC";
+          text-align: center;
+          letter-spacing: 0.22em;
+          font-size: $font-28;
+          color: #9e7c4a;
+          font-weight: 600;
+          position: relative;
+          margin-bottom: 3vw;
+          &::after {
+            content: "";
+            width: 38%;
+            height: 1px;
+            background-color: #534741;
+            bottom: -1.65vw;
+            position: absolute;
+            left: 5.5vw;
+          }
+        }
+
+        .content {
+          display: flex;
+          margin: 0 auto;
+          justify-content: center;
+          font-family: "微軟正黑體";
+          text-align: center;
+          letter-spacing: 0.15em;
+          font-size: $font-18;
+          color: #534741;
+          line-height: 2;
+        }
+
+        .en-title {
+          display: flex;
+          margin: 0 auto;
+          justify-content: center;
+          font-family: "Cormorant Garamond";
+          text-align: center;
+          font-weight: 500;
+          font-size: $font-40;
+          color: #9e7c4a;
+          margin-top: 1vw;
+        }
+
+        //主要圓形
+        .main-circle-box {
+          width: 100%;
+          display: flex;
+          margin: 0 auto;
+          justify-content: center;
+          position: relative;
+          margin-bottom: 14vw;
+          padding-right: 4vw;
+          .main-circle {
+            display: flex;
+            padding-top: 9vw;
+            position: relative;
+          }
+
+          .top-arc {
+            width: 25vw;
+            top: 5vw;
+            left: 29vw;
+            position: absolute;
+
+            img {
+              width: 100%;
+            }
+
+            .circle-item {
+              position: absolute;
+              width: 0.6vw;
+              top: 6.5vw;
+              right: -0.35vw;
+            }
+          }
+
+          .bottom-arc {
+            width: 30vw;
+            bottom: -10vw;
+            left: 25vw;
+            position: absolute;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .bottom-yuan-yao-text {
+            bottom: -5vw;
+            left: 30.5vw;
+            position: absolute;
+            font-size: 4.2vw;
+            font-family: "Cormorant Garamond";
+            font-weight: bold;
+            color: #534741;
+          }
+
+          .left-box,
+          .right-box {
+            display: flex;
+            flex-direction: column;
+
+            .yuan-box,
+            .yao-box {
+              width: 3.55vw;
+              align-items: center;
+              margin-bottom: 2vw;
+              img {
+                width: 100%;
+              }
+              .en-text {
+                font-family: "Cormorant Garamond";
+                color: #534741;
+                font-size: $font-26;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 0.35vw;
+              }
+            }
+            .small-title {
+              margin: initial;
+              margin-bottom: 2vw;
+            }
+          }
+
+          .left-box {
+            justify-content: right;
+            align-items: end;
+            margin-top: 1vw;
+            .small-title {
+              justify-content: right;
+
+              &::after {
+                display: none;
+              }
+            }
+            .content {
+              text-align: right;
+            }
+          }
+
+          .right-box {
+            justify-content: left;
+            align-items: start;
+            margin-top: 5vw;
+            .small-title {
+              justify-content: left;
+
+              &::after {
+                display: none;
+              }
+            }
+            .content {
+              text-align: left;
+            }
+          }
+
+          .center-box {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            margin-left: 5vw;
+            margin-right: 5vw;
+            img {
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+
+        .big-title {
+          font-size: $font-30;
+          display: flex;
+          margin: 0 auto;
+          justify-content: center;
+          font-family: "noto Serif TC";
+          text-align: center;
+          letter-spacing: 0.15em;
+          color: #9e7c4a;
+          font-weight: 600;
+        }
+
+        .big-img-box {
+          display: flex;
+          width: 85%;
+          margin: 0 auto;
+          justify-content: center;
+          margin-top: 5vw;
+          img {
+            width: 100%;
+          }
+        }
+
+        .top-quality-box {
+          display: flex;
+          width: 85%;
+          margin: 0 auto;
+          justify-content: space-between;
+          margin-top: 5vw;
+
+          .left-box {
+            display: flex;
+            flex-direction: column;
+            .title {
+              font-size: $font-28;
+              display: flex;
+              font-family: "noto Serif TC";
+              letter-spacing: 0.15em;
+              color: #9e7c4a;
+              font-weight: 500;
+              margin-bottom: 2.5vw;
+              position: relative;
+              &::after {
+                content: "";
+                width: 20%;
+                height: 1px;
+                background-color: #534741;
+                bottom: -1.5vw;
+                position: absolute;
+                left: 0vw;
+              }
+            }
+            .content {
+              text-align: left;
+              justify-content: left;
+              margin: initial;
+            }
+            :nth-child(2) {
+              margin-bottom: 1.5vw;
+            }
+            .en-title {
+              color: #9e7c4a;
+              font-weight: 600;
+              font-family: "Cormorant Garamond";
+              font-size: $font-40;
+              text-align: left;
+              justify-content: left;
+              margin: initial;
+              margin-top: 0.8vw;
+            }
+            .name {
+              display: flex;
+              justify-content: right;
+              padding-right: 2vw;
+              margin-top: 0vw;
+
+              div {
+                font-size: $font-18;
+                font-family: "微軟正黑體";
+                letter-spacing: 0.15em;
+                color: #534741;
+                align-self: center;
+                margin-right: 1vw;
+              }
+              img {
+                height: 2vw;
+                margin-top: 1.3vw;
+              }
+            }
+          }
+          .right-box {
+            display: flex;
+            margin-top: 2vw;
+            flex-direction: column;
+            margin-bottom: -6vw;
+            justify-content: end;
+            position: relative;
+            img {
+              width: 40vw;
+            }
+            .growth-rings-item {
+              position: absolute;
+              display: flex;
+              text-align: center;
+              flex-direction: column;
+              justify-content: center;
+
+              img {
+                width: 3vw;
+                height: 9vw;
+                align-self: center;
+              }
+
+              .zh-text {
+                font-size: $font-28;
+                font-family: "noto Serif TC";
+                letter-spacing: 0.15em;
+                color: #534741;
+                font-weight: 500;
+              }
+
+              .en-text {
+                font-size: $font-20;
+                font-family: "Cormorant Garamond";
+                color: #9e7c4a;
+                font-weight: 500;
+                margin-bottom: 1vw;
+              }
+            }
+            .aesthetics {
+              top: 32%;
+              left: 10%;
+            }
+            .quality {
+              top: 18%;
+              left: 30%;
+            }
+            .professional {
+              top: 27.7%;
+              left: 49%;
+              img {
+                height: 13vw;
+              }
+            }
+
+            .observant {
+              top: 24%;
+              left: 70.5%;
+              img {
+                height: 12vw;
+              }
+            }
+          }
+        }
+
+        .pure-aesthetics-box {
+          display: flex;
+          width: 85%;
+          margin: 0 auto;
+          justify-content: space-between;
+          margin-top: 9vw;
+          position: relative;
+
+          .pure-shadow {
+            position: absolute;
+            left: -9vw;
+            top: -11vw;
+            width: 38vw;
+            mix-blend-mode: difference;
+            opacity: 0.3;
+            transform-origin: left top;
+            animation: treeAni-3 6s infinite alternate-reverse ease-in;
+          }
+          .left-box {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            .img-box {
+              width: 40vw;
+              overflow: hidden;
+              display: flex;
+              margin-top: 7vw;
+              flex-direction: column;
+              img {
+                width: 100%;
+                object-fit: cover;
+              }
+            }
+            .img-box2 {
+              width: 18vw;
+              overflow: hidden;
+              display: flex;
+              margin-top: -10vw;
+              margin-right: -8vw;
+              flex-direction: column;
+              img {
+                width: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+          .right-box {
+            display: flex;
+            flex-direction: column;
+            .title {
+              font-size: $font-28;
+              display: flex;
+              font-family: "noto Serif TC";
+              letter-spacing: 0.15em;
+              color: #9e7c4a;
+              font-weight: 500;
+              justify-content: right;
+              margin-bottom: 2.5vw;
+              position: relative;
+              &::after {
+                content: "";
+                width: 20%;
+                height: 1px;
+                background-color: #534741;
+                bottom: -1.5vw;
+                position: absolute;
+                right: 0vw;
+              }
+            }
+            .content {
+              text-align: right;
+              justify-content: right;
+              margin: initial;
+            }
+            .en-title {
+              color: #9e7c4a;
+              font-weight: 600;
+              font-family: "Cormorant Garamond";
+              font-size: $font-40;
+              text-align: right;
+              justify-content: right;
+              margin: initial;
+              margin-top: 0.8vw;
+              padding-right: 1.3vw;
+            }
+          }
+        }
+
+        .tree-box {
+          display: flex;
+          width: 85%;
+          margin: 0 auto;
+
+          margin-top: 0vw;
+          position: relative;
+
+          .left-box {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-right: 10vw;
+            margin-left: 7vw;
+            margin-top: -2vw;
+            .title {
+              font-size: $font-28;
+              font-family: "noto Serif TC";
+              letter-spacing: 0.15em;
+              color: #9e7c4a;
+              font-weight: 500;
+              position: relative;
+              writing-mode: tb;
+              margin-left: 2.5vw;
+              &::after {
+                content: "";
+                width: 1px;
+                height: 25%;
+                background-color: #534741;
+                top: 0vw;
+                position: absolute;
+                left: -1.3vw;
+              }
+            }
+            .content {
+              writing-mode: tb;
+              text-align: start;
+            }
+            .en-title {
+              writing-mode: tb;
+              text-align: start;
+              margin-top: 0vw;
+              margin: initial;
+              margin-right: 0.8vw;
+              justify-content: start;
+            }
+          }
+          .right-box {
+            .bird {
+              position: absolute;
+              width: 8vw;
+              right: 4vw;
+              top: -7vw;
+            }
+            .tree {
+              position: absolute;
+              width: 25vw;
+              right: 3vw;
+            }
+          }
+        }
+      }
+
+      .major-events {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 6vw;
+        padding-bottom: 10vw;
+        position: relative;
+
+        &::after {
+          content: "";
+          height: 100%;
+          background-color: #5347415d;
+          width: 1px;
+          position: absolute;
+          top: 0px;
+          left: 22vw;
+          opacity: 0;
+        }
+        .top-nav {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-left: 1.5vw;
+
+          .nav {
+            margin-right: 3vw;
+            font-family: "noto Serif TC";
+            text-align: center;
+            letter-spacing: 0.2em;
+            font-size: $font-20;
+            color: #534741;
+            font-weight: 600;
+            padding-bottom: 0.7vw;
+            position: relative;
+            cursor: pointer;
+
+            &:hover {
+              color: #9e7c4a;
+              transition: 0.3s ease-in-out;
+            }
+
+            &:first-child {
+              &::after {
+                content: "";
+                width: 1px;
+                height: 50%;
+                background-color: #534741;
+                bottom: 0.75vw;
+                position: absolute;
+                left: -1.45vw;
+              }
+            }
+
+            &:last-child {
+              &::after {
+                content: "";
+                width: 1px;
+                height: 50%;
+                background-color: #534741;
+                bottom: 0.75vw;
+                position: absolute;
+                left: -1.5vw;
+              }
+              &::before {
+                content: "";
+                width: 1px;
+                height: 50%;
+                background-color: #534741;
+                bottom: 0.75vw;
+                position: absolute;
+                right: -1.45vw;
+              }
+            }
+          }
+          .active {
+            color: #9e7c4a;
+            position: relative;
+            border-bottom: 1px solid #534741;
+          }
+        }
+        .history-content-box {
+          display: flex;
+          justify-content: right;
+          .history-content {
+            display: flex;
+            width: 78%;
+            padding-left: 7vw;
+            margin-top: 5vw;
+            .left-year-nav {
+              display: flex;
+              flex-direction: column;
+              font-size: $font-20;
+              font-weight: 500;
+              color: #534741;
+              justify-content: center;
+              font-family: "Jost", sans-serif;
+              margin-right: 2.5vw;
+              div {
+                opacity: 0.3;
+                cursor: pointer;
+                margin-bottom: 1vw;
+                &:hover {
+                  opacity: 1;
+                  transition: 0.3s ease-in-out;
+                }
+              }
+            }
+
+            .center-img-box {
+              display: flex;
+              flex-direction: column;
+              position: relative;
+              overflow: hidden;
+              width: 37vw;
+              height: 21vw;
+              img {
+                width: 100%;
+                top: 0px;
+                left: 0px;
+                position: absolute;
+                opacity: 0;
+              }
+            }
+
+            .right-info-box {
+              display: flex;
+              justify-content: center;
+              margin-left: 5vw;
+              width: 16vw;
+              position: relative;
+
+              .line-top-right {
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                width: 10vw;
+              }
+              .info-item {
+                display: flex;
+                flex-direction: column;
+                padding-top: 4.5vw;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                opacity: 0;
+                .year-first {
+                  color: #9e7c4a;
+                  font-size: 5.5vw;
+                  font-family: "Jost", sans-serif;
+                }
+                .year-last-box {
+                  display: flex;
+
+                  padding-left: 3vw;
+                  .year-text {
+                    color: #534741;
+                    font-family: "Cormorant Garamond";
+                    font-weight: 500;
+                    font-size: $font-20;
+                    margin-top: -1vw;
+                  }
+                  .year-last {
+                    color: #9e7c4a;
+                    font-size: 5.5vw;
+                    font-family: "Jost", sans-serif;
+                    margin-left: 1.3vw;
+                    margin-top: -5vw;
+                  }
+                }
+                .info-text {
+                  color: #534741;
+                  margin-top: 3.4vw;
+                  font-weight: 500;
+                  font-size: $font-20;
+                  font-family: "Noto Serif TC";
+                  letter-spacing: 0.15em;
+                }
+              }
+            }
+          }
+        }
+
+        .classic-content-box {
+          display: flex;
+          justify-content: center;
+          position: relative;
+
+          .arrow-top {
+            width: 2.8vw;
+            display: flex;
+            position: absolute;
+            right: 5vw;
+            top: 13vw;
+            padding: 1vw;
+            cursor: pointer;
+            padding-bottom: 0vw;
+            img {
+              width: 100%;
+            }
+          }
+          .arrow-bottom {
+            width: 2.8vw;
+            display: flex;
+            position: absolute;
+            right: 5vw;
+            top: 17vw;
+            padding: 1vw;
+            padding-top: 0vw;
+            cursor: pointer;
+            img {
+              width: 100%;
+            }
+          }
+
+          .classic-content {
+            display: flex;
+            width: 73%;
+            margin-top: 6vw;
+            height: 30vw;
+            // overflow: hidden;
+            flex-direction: column;
+            position: relative;
+
+            .classic-item {
+              display: flex;
+              margin-bottom: 6vw;
+              position: absolute;
+              top: 0px;
+              left: 9.5vw;
+
+              &:nth-child(even) {
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+
+                .left-box {
+                  margin-right: 0vw;
+                  padding-right: 0vw;
+                  padding-left: 3vw;
+
+                  .info-item {
+                    .year-box {
+                      align-self: start;
+                    }
+                  }
+                  .info-content {
+                    text-align: start !important;
+                  }
+                }
+                .right-box {
+                  align-items: end;
+                  margin-left: 0.4vw;
+                }
+              }
+              .left-box {
+                display: flex;
+                flex-direction: column;
+                margin-right: 1.5vw;
+                width: 50%;
+                padding-right: 1vw;
+                .info-item {
+                  display: flex;
+                  flex-direction: column;
+
+                  justify-content: center;
+                  .year-box {
+                    display: flex;
+                    flex-direction: column;
+                    align-self: end;
+
+                    //!!
+                    opacity: 0;
+                    .year-first {
+                      color: #9e7c4a;
+                      font-size: 5.5vw;
+                      font-family: "Jost", sans-serif;
+                    }
+                    .year-last-box {
+                      display: flex;
+                      padding-left: 2.5vw;
+                      .year-text {
+                        color: #534741;
+                        font-family: "Cormorant Garamond";
+                        font-weight: 500;
+                        font-size: $font-20;
+                        margin-top: -1vw;
+                      }
+                      .year-last {
+                        color: #9e7c4a;
+                        font-size: 5.5vw;
+                        font-family: "Jost", sans-serif;
+                        margin-left: 1.6vw;
+                        margin-top: -5vw;
+                      }
+                    }
+                  }
+
+                  .info-content {
+                    color: #534741;
+                    margin-top: 1vw;
+                    font-weight: 500;
+                    font-size: $font-18;
+                    font-family: "Noto Serif TC";
+                    letter-spacing: 0.15em;
+                    text-align: end;
+                    line-height: 2;
+
+                    //!!
+                    opacity: 0;
+                  }
+                }
+              }
+              .middle-line {
+                position: absolute;
+                background-color: #534741b4;
+                width: 1px;
+                height: 16vw;
+                top: 12.5vw;
+                left: 27vw;
+                //!!
+                opacity: 0;
+              }
+              .right-box {
+                display: flex;
+                flex-direction: column;
+                width: 45%;
+                margin-top: 1vw;
+                .img-box {
+                  width: 30vw;
+                  overflow: hidden;
+
+                  //!!
+                  opacity: 0;
+                  img {
+                    width: 100%;
+                  }
+                }
+                .local-name-box {
+                  display: flex;
+                  margin-top: 1vw;
+
+                  //!!
+                  opacity: 0;
+                  .loacl {
+                    font-size: $font-14;
+                    font-family: "Noto Serif TC";
+                    letter-spacing: 0.2em;
+                    padding-right: 0.1vw;
+                    padding-left: 0.3vw;
+                    padding-bottom: 0.1vw;
+                    border-radius: 5px;
+                    align-self: center;
+                    color: #fff;
+                    background-color: #534741;
+                    margin-right: 1vw;
+                  }
+
+                  .name {
+                    font-size: $font-22;
+                    font-family: "Noto Serif TC";
+                    letter-spacing: 0.15em;
+                    font-weight: 500;
+                    align-self: center;
+                    color: #534741;
+                    margin-right: 1vw;
+                  }
+
+                  .company {
+                    font-size: $font-18;
+                    font-family: "微軟正黑體";
+                    letter-spacing: 0.15em;
+                    align-self: center;
+                    color: #534741;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

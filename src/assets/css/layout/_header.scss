@@ -11,11 +11,15 @@ header {
   padding-right: 5vw;
   padding-bottom: 1vw;
   padding-top: 0.7vw;
+  transition: background-color 0.3s ease; /* 添加過渡效果 */
+  backdrop-filter: blur(8px);
+
   .logo-box {
     display: flex;
     flex-direction: column;
     width: 10vw;
-
+    position: relative;
+    z-index: 99;
     img {
       width: 100%;
     }
@@ -24,6 +28,8 @@ header {
   .right-nav-box {
     display: flex;
     margin-bottom: -0.4vw;
+    position: relative;
+    z-index: 99;
     a {
       color: #555757;
       font-weight: 600;
@@ -34,4 +40,7 @@ header {
       margin-right: 3vw;
     }
   }
+}
+header.transparent {
+  background-color: rgba(255, 255, 255, 0.336); /* 滾動時背景色變為透明 */
 }
